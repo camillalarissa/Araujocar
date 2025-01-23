@@ -1,319 +1,391 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultoria Financeira Automotiva</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-      .carousel-item {
-            height: 100vh;
-            min-height: 500px;
-            background:center center scroll;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        
-        .carousel-caption {
-            bottom: 50%;
-            transform: translateY(50%);
-            background: rgba(231, 87, 87, 0.3);
-            padding: 2rem;
-            border-radius: 15px;
-        }
-        
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 5%;
-        }
-        
-        .carousel-indicators {
-            bottom: 40px;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        h1{
-            font-weight: 600px;
-            
-        }
-        
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .feature-card {
-            border: none;
-            transition: transform 0.3s;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        .trust-badge {
-            width: 100px;
-            height: 100px;
-            margin: 1rem;
-        }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        .testimonial-card {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 1rem;
-        }
-    </style>
-</head>
-<body>
+    <title>Araújo Car</title>
+    <link rel="shortcut icon" href="img/carro.png" type="image/x-icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Compro Carros com Dívidas</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >Araújo Car | Compro Carros com Dívidas</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-            </div>
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('melhores-carros-populares-ford-ka.jpg')">
-                    <div class="hero-overlay"></div>
-                    <div class="carousel-caption">
-                        <h1 class="display-4 mb-4">Compro seu carro mesmo com dívida!</h1>
-                        <p class="lead mb-4">Limpo seu nome, quito sua dívida.</p>
-                        <a href="#contato" class="btn btn-danger btn-lg">Pagamos á vista</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url('renault_kwid_2019_1_14062021_48356_1280_960.jpg')">
-                    <div class="hero-overlay"></div>
-                    <div class="carousel-caption">
-                        <h1 class="display-4 mb-4">Carro com parcelas atrasadas? Ou busca e Apreensão?</h1>
-                        <p class="lead mb-4">NÓS RESOLVEMOS EM HORAS!</p>
-                        <a href="#servicos" class="btn btn-danger btn-lg">Pagamos á vista</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url('Chevrolet-Onix-LT-2022.jpg')">
-                    <div class="hero-overlay"></div>
-                    <div class="carousel-caption">
-                        <h1 class="display-4 mb-4">Seu Carro ou Moto Está com dívidas?</h1>
-                        <p class="lead mb-4">Recurepe sua liberdade financeira, compro seu carro/ moto mesmo com dívida!</p>
-                        <a href="#contato" class="btn btn-danger btn-lg">Fale Conosco</a>
-                    </div>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
         </div>
+
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="
+              background-image: url('img/melhores-carros-populares-ford-ka.jpg');
+            "
+          >
+            <div class="hero-overlay"></div>
+            <div class="carousel-caption">
+              <h1 class="font display-4 mb-4">
+                Compro seu carro mesmo com dívida!
+              </h1>
+              <p class="font-1 lead mb-4">Limpo seu nome, quito sua dívida.</p>
+              <a
+                href="https://abrir.link/KuQMo"
+                class="font-1 btn btn-danger btn-lg"
+                >Pagamos á vista</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            style="
+              background-image: url('img/renault_kwid_2019_1_14062021_48356_1280_960.jpg');
+            "
+          >
+            <div class="hero-overlay"></div>
+            <div class="carousel-caption">
+              <h1 class="font display-4 mb-4">
+                Carro com parcelas atrasadas? Ou busca e Apreensão?
+              </h1>
+              <p class="font-1 lead mb-4">NÓS RESOLVEMOS EM HORAS!</p>
+              <a href="https://abrir.link/KuQMo" class="btn btn-danger btn-lg"
+                >Pagamos á vista</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            style="background-image: url('img/Chevrolet-Onix-LT-2022.jpg')"
+          >
+            <div class="hero-overlay"></div>
+            <div class="carousel-caption">
+              <h1 class="font display-4 mb-4">
+                Seu Carro ou Moto Está com dívidas?
+              </h1>
+              <p class="font-1 lead mb-4">
+                Recurepe sua liberdade financeira, compro seu carro/ moto mesmo
+                com dívida!
+              </p>
+              <a href="https://abrir.link/KuQMo" class="btn btn-danger btn-lg"
+                >Fale Conosco</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
     </section>
 
     <!-- Sobre Section -->
     <section id="sobre" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Por que nós escolher?</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">100% Seguro e Legal</h5>
-                            <p class="card-text">Todas as nossas soluções são respaldadas juridicamente</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-clock fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Atendimento Rápido</h5>
-                            <p class="card-text">Resposta em até 24 horas úteis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Transparência Total</h5>
-                            <p class="card-text">Sem surpresas ou taxas ocultas</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-5">Por que nós escolher?</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card feature-card">
+              <div class="card-body text-center">
+                <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">100% Seguro e Legal</h5>
+                <p class="card-text">
+                  Todas as nossas soluções são respaldadas juridicamente
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card feature-card">
+              <div class="card-body text-center">
+                <i class="fas fa-clock fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">Atendimento Rápido</h5>
+                <p class="card-text">Resposta em até 24 horas úteis</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card feature-card">
+              <div class="card-body text-center">
+                <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">Transparência Total</h5>
+                <p class="card-text">Sem surpresas ou taxas ocultas</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Serviços Section -->
     <section id="servicos" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Nossos Serviços</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Análise Financeira Completa</h5>
-                            <p class="card-text">Avaliação detalhada da sua situação financeira e do seu veículo</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Avaliação gratuita</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Plano personalizado</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Orientação especializada</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Negociação de Dívidas</h5>
-                            <p class="card-text">Intermediação profissional com instituições financeiras</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Negociação especializada</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Melhores condições</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Acompanhamento completo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-5">Nossos Serviços</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Resolva Débitos</h5>
+                <p class="card-text">
+                  Está com seu carro ou moto em dívida ou correndo o risco de
+                  busca e apreensão? Nós temos a solução ideal para você!
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Compramos seu
+                    veículo mesmo com dívidas!
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Limpamos seu
+                    nome e quitamos sua dívida.
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Pagamento à
+                    vista, rápido e seguro!
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Recupere sua Liberdade Financeira</h5>
+                <p class="card-text">Por que escolher nossos serviços?</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Recupere sua
+                    tranquilidade financeira de forma simples e eficaz.
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Atendimento
+                    confiável e ágil via WhatsApp.
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Transforme seu
+                    veículo em uma oportunidade de começar do zero.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Depoimentos Section -->
-    <section id="depoimentos" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <p class="mb-3">"Excelente atendimento e profissionalismo. Conseguiram resolver minha situação em tempo recorde."</p>
-                        <footer class="blockquote-footer">Carlos S.</footer>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <p class="mb-3">"Muito transparentes e honestos em todo o processo. Recomendo fortemente!"</p>
-                        <footer class="blockquote-footer">Ana P.</footer>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <p class="mb-3">"Profissionais sérios que realmente se importam em ajudar as pessoas."</p>
-                        <footer class="blockquote-footer">Roberto M.</footer>
-                    </div>
-                </div>
-            </div>
+    <!-- Seção Chamado à Ação Inspirador -->
+    <section id="chamado-inspirador" class="py-5 text-center bg-light">
+      <div class="container">
+        <h2 class="mb-4">Estamos Aqui para Você!</h2>
+        <p class="lead mb-4">
+          Queremos ajudar você a alcançar estabilidade financeira. Entre em
+          contato hoje e comece a transformar sua vida!
+        </p>
+        <div class="d-flex justify-content-center">
+          <!-- Ícones decorativos para enriquecer o design -->
+          <div class="mx-3">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/456/456212.png"
+              alt="Ícone de Crescimento"
+              style="width: 80px"
+            />
+            <p class="mt-2">Crescimento</p>
+          </div>
+          <div class="mx-3">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2920/2920322.png"
+              alt="Ícone de Planejamento"
+              style="width: 80px"
+            />
+            <p class="mt-2">Planejamento</p>
+          </div>
+          <div class="mx-3">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+              alt="Ícone de Transformação"
+              style="width: 80px"
+            />
+            <p class="mt-2">Transformação</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contato Section -->
     <section id="contato" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Entre em Contato</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="contactForm" class="p-4 bg-white rounded shadow">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Telefone</label>
-                            <input type="tel" class="form-control" id="phone" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="message" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="text-center mb-5">Entre em Contato</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form
+              action="https://formsubmit.co/fabianoaraujocar@gmail.com"
+              method="POST"
+              id="contactForm"
+              class="p-4 bg-white rounded shadow"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Digite seu nome"
+                  required
+                  class="form-control"
+                  id="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone com DD</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Digite seu telefone com DD"
+                  class="form-control"
+                  id="phone"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+
+                <textarea
+                  rows="3"
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  placeholder="Digite seu Mensagem"
+                  required
+                ></textarea>
+              </div>
+
+              <input
+                type="hidden"
+                name="_next"
+                value="https://araujocar.netlify.app/"
+              />
+              <button type="submit" class="btn btn-danger w-100">
+                Enviar Mensagem
+              </button>
+              <input type="hidden" name="_subject" value="Novo Contato!" />
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/SEU_NUMERO" class="whatsapp-button btn btn-success btn-lg rounded-circle">
-        <i class="fab fa-whatsapp"></i>
+    <a
+      href="https://abrir.link/KuQMo"
+      class="whatsapp-button btn btn-success btn-lg rounded-circle"
+    >
+      <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>© 2025 ComproCarrosComDívidas. Todos os direitos reservados.</p>
-            <div class="mt-3">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-            </div>
+    <footer class="text-white py-4">
+      <div class="container text-center">
+        <p>© 2025 ComproCarrosComDívidas. Todos os direitos reservados.</p>
+        <div class="mt-3">
+          <a
+            href="https://www.facebook.com/profile.php?id=61572624832065&locale=pt_BR"
+            target="_blank"
+            class="text-white me-3"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/fabianoaraujocar_/"
+            target="_blank"
+            class="text-white me-3"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const carousel = new bootstrap.Carousel(document.querySelector('#heroCarousel'), {
-            interval: 5000, // Tempo entre slides (5 segundos)
-            touch: true,    // Permite controle por touch
-            pause: 'hover'  // Pausa ao passar o mouse
-        });
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-            this.reset();
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
